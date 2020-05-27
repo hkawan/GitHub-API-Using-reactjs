@@ -1,6 +1,14 @@
-import React, { useState, useEffect } from 'react';
+/* Author: Haroon Awan 
+   Created: 25-05-2020
+ */
+
+import React, { useState, useEffect } from 'react'; //import hook functions
 import ReactDOM from 'react-dom';
 
+/* This function fetches data from Github's API and stores it in JSON,
+   outputs in h1 tags using JSX. 
+
+*/
 function GitHubUser({ login }) {
   const [data, setData] = useState(null);
   useEffect(() => {
@@ -22,6 +30,7 @@ function GitHubUser({ login }) {
   return null; 
 }
 
+// login can be changed to fetch other Github account's API
 function App() {
   return <GitHubUser login="hkawan" />;
 }
