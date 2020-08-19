@@ -30,7 +30,7 @@ function GitHubUser({ login }) {
   return null; 
 }
 
-// login can be changed to fetch other Github account's API
+// login can be changed to fetch any GitHub account's API
 function App() {
   return <GitHubUser login="hkawan" />;
 }
